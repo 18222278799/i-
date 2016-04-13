@@ -1,0 +1,238 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/bg01"
+    tools:context=".MainActivity" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none" >
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="凭证字号："
+                            android:textSize="@dimen/table_font_size" />
+
+                        <EditText 
+                            android:id="@+id/etPZID"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="输入一个数字"
+                            android:inputType="number"
+                            android:maxLength="3"
+                            android:textSize="@dimen/table_font_size" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="日期："
+                            android:textSize="@dimen/table_font_size" />
+
+                        <EditText
+                            android:id="@+id/etDate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="XXXX-XX-XX"
+                            android:inputType="date"
+                            android:maxLength="10"
+                            android:textSize="@dimen/table_font_size" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="记账凭证"
+                        android:textSize="@dimen/table_title_font_size" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/table_frame_width"
+                    android:background="@color/table_frame" />
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="@dimen/table_frame_width"
+                        android:layout_height="match_parent"
+                        android:background="@color/table_frame" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="摘要"
+                        android:textSize="@dimen/table_font_size" />
+
+                    <TextView
+                        android:layout_width="@dimen/table_frame_width"
+                        android:layout_height="match_parent"
+                        android:background="@color/table_frame" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="会计科目"
+                        android:textSize="@dimen/table_font_size" />
+
+                    <TextView
+                        android:layout_width="@dimen/table_frame_width"
+                        android:layout_height="match_parent"
+                        android:background="@color/table_frame" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="借方金额"
+                            android:textSize="@dimen/table_font_size" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/table_frame_width"
+                            android:background="@color/table_frame" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:background="@drawable/money_title"
+                            android:gravity="center"
+                            android:textSize="@dimen/table_font_size" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="@dimen/table_frame_width"
+                        android:layout_height="match_parent"
+                        android:background="@color/table_frame" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="贷方金额"
+                            android:textSize="@dimen/table_font_size" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/table_frame_width"
+                            android:background="@color/table_frame" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:background="@drawable/money_title"
+                            android:gravity="center"
+                            android:textSize="@dimen/table_font_size" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="@dimen/table_frame_width"
+                        android:layout_height="match_parent"
+                        android:background="@color/table_frame" />
+                </TableRow>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/table_frame_width"
+                    android:background="@color/table_frame" />
+
+                <TableLayout
+                    android:id="@+id/tlJizhangPingzheng"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+                </TableLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <Button
+                        android:id="@+id/btnBaocun"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:onClick="btnBaocunClick"
+                        android:text="保存" />
+                </RelativeLayout>
+            </TableLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:id="@+id/llKemu"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+</RelativeLayout>

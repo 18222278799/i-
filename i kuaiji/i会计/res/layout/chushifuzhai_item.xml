@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<LinearLayout  
+    xmlns:android="http://schemas.android.com/apk/res/android"  
+    android:layout_width="fill_parent"  
+    android:layout_height="fill_parent"   
+    android:scrollbarAlwaysDrawHorizontalTrack="true"  
+    >  
+      
+<TableLayout android:id="@+id/tablefuzhai"  
+    android:layout_width="wrap_content"  
+    android:layout_height="wrap_content" >  
+    <TableRow>  
+        <View android:layout_width="1dip" android:background="#FF909090" />  
+        <TextView  
+            android:id="@+id/tvfuzhaiid"  
+            android:layout_height="wrap_content"  
+            android:layout_width="155dp"
+            android:textSize="20px" 
+            android:layout_weight="1"
+            android:gravity="left"/>  
+        <View android:layout_width="1dip" android:background="#FF909090" />  
+        <TextView  
+            android:id="@+id/tvfuzhainame"  
+            android:layout_height="wrap_content"  
+            android:layout_width="200dp"
+            android:textSize="20px" 
+            android:layout_weight="1"
+            android:gravity="left"/>  
+        <View android:layout_width="1dip" android:background="#FF909090" />  
+        <TextView  
+            android:id="@+id/tvfuzhaidir"  
+            android:layout_height="wrap_content"  
+            android:layout_width="155dp"
+            android:textSize="20px" 
+            android:layout_weight="1"         
+            android:gravity="center"/>  
+        <View android:layout_width="1dip" android:background="#FF909090" />  
+        <EditText  
+            android:id="@+id/edfuzhaiqichu"  
+            android:layout_height="wrap_content"   
+            android:layout_width="155dp"
+            android:textSize="20px"
+            android:layout_weight="1"
+            android:gravity="left" />  
+        <View android:layout_width="1dip" android:background="#FF909090" />  
+        
+    </TableRow>  
+  
+</TableLayout>  
+</LinearLayout> 

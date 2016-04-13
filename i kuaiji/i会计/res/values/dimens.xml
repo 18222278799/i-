@@ -1,0 +1,13 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="table_frame_width">1dp</dimen>
+    
+    <dimen name="table_font_size">15sp</dimen>
+    <dimen name="table_title_font_size">20sp</dimen>
+    <dimen name="kemu_item_height">30dp</dimen>
+    <dimen name="table_font_size2">7sp</dimen>
+
+</resources>

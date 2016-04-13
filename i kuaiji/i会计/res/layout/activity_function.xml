@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/bg1"
+    tools:context=".FunctionActivity" >
+
+    <TextView 
+        android:id="@+id/tvHello"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/hello"
+        android:textColor="#009ACD"
+        android:textSize="15sp"
+        />
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:onClick="goRecord"
+            android:drawableTop="@drawable/inquire"
+            android:text="@string/record_voucher"
+            android:background="@drawable/record_selector"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" 
+            android:layout_gravity="center"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:onClick="goInquire"
+            android:drawableTop="@drawable/search"
+            android:background="@drawable/inquire_selector"
+            android:text="@string/inquire_voucher"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" 
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+
+    
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="goReg"
+            android:text="注销"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+    
+    </LinearLayout>
+    
+
+
+</RelativeLayout>
